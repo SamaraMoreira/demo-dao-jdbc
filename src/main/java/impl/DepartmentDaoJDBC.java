@@ -1,9 +1,13 @@
 package impl;
 
 import dao.DepartmentDao;
+import db.DbException;
 import entities.Department;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 public class DepartmentDaoJDBC implements DepartmentDao {
@@ -31,7 +35,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 
     @Override
     public Department findById(Integer id) {
-        return null;
+         return null;
     }
 
     @Override
