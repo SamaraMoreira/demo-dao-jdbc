@@ -5,6 +5,7 @@ import dao.SellerDao;
 import entities.Department;
 import entities.Seller;
 
+import javax.swing.*;
 import java.util.Date;
 import java.util.List;
 
@@ -35,6 +36,12 @@ public class Main {
         seller.setName("Samara");
         sellerDao.update(seller);
         System.out.println(" Update completed!");
+
+        System.out.println(" === TEST 6: seller delete===");
+        var id1  = JOptionPane.showInputDialog("Entre com o id para exclusão: ");
+        sellerDao.deleteById(Integer.valueOf(id1));
+        System.out.println(" Delete completed!");
+
 
     }
 }
